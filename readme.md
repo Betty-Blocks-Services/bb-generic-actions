@@ -1,12 +1,11 @@
-# Generic Actions TypeScript Template
+# Generic Actions Template (Vanilla 🍦)
 
-This project serves as a starting point for building generic actions in TypeScript.
+This project serves as a starting point for building generic actions in Vanilla JavaScript.
 
 ## 📦 Dependencies
 
 This template includes the following key dependencies:
 
-- **TypeScript** – Static TypeScript for JavaScript.
 - **Jest** – Testing framework.
 - **esbuild** – Fast JavaScript bundler.
 
@@ -30,17 +29,10 @@ You can add new functions using the `bbs` CLI.
 bbs functions new <name>
 ```
 
-### 3. Build the Project
+### 3. Write & Run Tests
 
-To compile the TypeScript files into JavaScript, run:
-
-```sh
-npm run build
-```
-
-The compiled files will be placed in the `functions` folder
-
-### 4. Run Tests
+Write your tests in the `/tests` directory. Use the following naming conventions for your tests:
+`functionName.tests.js` where functionName is the function you are testing.
 
 To execute tests using Jest, run:
 
@@ -48,12 +40,12 @@ To execute tests using Jest, run:
 npm test
 ```
 
-### 5. Publishing
+### 4. Publishing
 
-To publish your project using the `bbs` CLI, use:
+To publish your project using the `bb` CLI, use:
 
 ```sh
-bbs functions publish
+bb functions publish
 ```
 
 This command will deploy your actions to the appropriate environment.

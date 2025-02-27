@@ -1,3 +1,5 @@
+import { hello } from "../functions/utils";
+
 test("hello", () => {
-	expect(1 + 1).toBe(2);
+	expect(hello("John")).toBe("Hello, John");
 });
