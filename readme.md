@@ -26,7 +26,7 @@ npm install
 You can add new functions using the `bbs` CLI.
 
 ```sh
-bbs functions new <name>
+bb functions new <name>
 ```
 
 ### 3. Write & Run Tests
