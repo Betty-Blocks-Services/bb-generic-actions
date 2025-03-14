@@ -7,7 +7,7 @@ This project serves as a starting point for building generic actions in Vanilla 
 This template includes the following key dependencies:
 
 - **Jest** – Testing framework.
-- **Esbuild** - Parse plugin for Jest
+- **esbuild** – Fast JavaScript bundler.
 - **Trunk** – DevEx toolkit to check, test, merge, and monitor your code.
 - **Commitizen** - Simplify and structure commit messages
 - **cz-conventional-changelog** - Adapter for Commitizen
