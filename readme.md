@@ -7,7 +7,10 @@ This project serves as a starting point for building generic actions in Vanilla 
 This template includes the following key dependencies:
 
 - **Jest** – Testing framework.
-- **esbuild** – Fast JavaScript bundler.
+- **Esbuild** - Parse plugin for Jest
+- **Trunk** – DevEx toolkit to check, test, merge, and monitor your code.
+- **Commitizen** - Simplify and structure commit messages
+- **cz-conventional-changelog** - Adapter for Commitizen
 
 Check `package.json` for the full list of dependencies.
 
@@ -23,7 +26,7 @@ npm install
 
 ### 2. Add new functions
 
-You can add new functions using the `bbs` CLI.
+You can add new functions using the `bb` CLI.
 
 ```sh
 bb functions new <name>
