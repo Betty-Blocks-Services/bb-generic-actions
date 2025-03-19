@@ -14,11 +14,9 @@
   "scripts": {
     "test": "jest",
     "trunk": "trunk",
-    "lint": "trunk check",
-    "lint:fix": "trunk check --fix",
+    "lint": "trunk check --show-existing",
+    "lint:fix": "trunk check --fix --show-existing",
     "fmt": "trunk fmt",
-    "format": "trunk fmt",
-    "format:check": "trunk fmt --check",
     "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
   },
   "devDependencies": {
