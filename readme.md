@@ -32,12 +32,19 @@ You can add new functions using the `bb` CLI.
 bb functions new <name>
 ```
 
-### 3. Write & Run Tests
+### 3. Create & Run Tests
 
-Write your tests in the `/tests` directory. Use the following naming conventions for your tests:
-`functionName.tests.js` where functionName is the function you are testing.
+Create your tests in the `/__tests__` directory.
 
-To execute tests using Jest, run:
+Use the following naming conventions for your tests:
+
+```text
+functionname.test.js
+```
+
+#### Running tests
+
+Tests are run with Jest:
 
 ```sh
 npm test
