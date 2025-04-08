@@ -64,6 +64,5 @@ This command will deploy your actions to the appropriate environment.
 
 - This template is designed to be modular and easy to extend.
 - Feel free to modify jest.config.js to suit your project’s needs.
-- For more details, check out the bbs CLI documentation.
 
 Happy coding! 🚀
