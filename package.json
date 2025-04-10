@@ -18,7 +18,7 @@
     "lint": "trunk check --show-existing",
     "lint:fix": "trunk check --fix --show-existing",
     "fmt": "trunk fmt",
-    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git add . && git commit -m 'sync' && git push)"
+    "sync": "git pull && (git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard) || (git status && echo \"\r---- Adding changes and committing ----\r\r\" && git add . && git commit -m 'sync' && git push)"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
