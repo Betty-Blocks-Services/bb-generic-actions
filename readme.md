@@ -2,19 +2,18 @@
 
 This project serves as a starting point for building generic actions in Vanilla JavaScript.
 
-## 📦 Dependencies
+## Dependencies
 
 This template includes the following key dependencies:
 
-- **Jest** – Testing framework.
-- **esbuild** – Fast JavaScript bundler.
+- **bun** – Fast test runner.
 - **Trunk** – DevEx toolkit to check, test, merge, and monitor your code.
 - **Commitizen** - Simplify and structure commit messages
 - **cz-conventional-changelog** - Adapter for Commitizen
 
 Check `package.json` for the full list of dependencies.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Install Dependencies
 
@@ -32,25 +31,28 @@ You can add new functions using the `bb` CLI.
 bb functions new <name>
 ```
 
-### 3. Create & Run Tests
+### 3. Test your code
 
-Create your tests in the `/__tests__` directory.
-
-Use the following naming conventions for your tests:
-
-```text
-functionname.test.js
-```
-
-#### Running tests
-
-Tests are run with Jest:
+Create your tests in `__tests__` and test them:
 
 ```sh
-npm test
+bun test
 ```
 
-### 4. Publishing
+### 4. Configure publishing
+
+Create a `config.json` in the project root with your `applicationId` and `host`:
+
+```json
+{
+  "applicationId": "your-application-id",
+  "host": "your-host"
+}
+```
+
+See: https://github.com/bettyblocks/cli/wiki/Functions:Advanced
+
+### 5. Publish your code
 
 To publish your project using the `bb` CLI, use:
 
@@ -60,9 +62,7 @@ bb functions publish
 
 This command will deploy your actions to the appropriate environment.
 
-### Notes
+## Notes
 
 - This template is designed to be modular and easy to extend.
-- Feel free to modify jest.config.js to suit your project’s needs.
-
-Happy coding! 🚀
+- For more details, check out the bbs CLI documentation.
