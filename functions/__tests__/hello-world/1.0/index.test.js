@@ -1,5 +1,5 @@
 import { describe, it, expect } from "bun:test";
-import helloWorld from "../../hello-world/1.0/index";
+import helloWorld from "../../../hello-world/1.0/index";
 
 describe("helloWorld/1.0", () => {
   it("should return a greeting", async () => {
