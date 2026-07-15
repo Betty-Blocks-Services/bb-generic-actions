@@ -14,5 +14,3 @@ describe("helloWorld/1.0", () => {
     expect(result).toStrictEqual(expected);
   });
 });
-
-// Read https://jestjs.io/docs/getting-started for more info on writing tests with Jest
